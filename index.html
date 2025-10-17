@@ -391,63 +391,62 @@
     <script>
         // -------------------- Datos (NBA) --------------------
     const DATA = {
-        "NBA": {
-            "Atlanta Hawks": {"mean":237.5,"std":9.8},
-            "Boston Celtics":{"mean":223.5,"std":8.7},
-            "Brooklyn Nets":{"mean":217.3,"std":9.2},
-            "Charlotte Hornets":{"mean":219.3,"std":9.5},
-            "Chicago Bulls":{"mean":237.2,"std":8.8},
-            "Cleveland Cavaliers":{"mean":234.3,"std":8.9},
-            "Dallas Mavericks":{"mean":229.6,"std":9.7},
-            "Denver Nuggets":{"mean":237.7,"std":9.3},
-            "Detroit Pistons":{"mean":229.1,"std":9.1},
-            "Golden State Warriors":{"mean":224.3,"std":10.4},
-            "Houston Rockets":{"mean":224.1,"std":8.8},
-            "Indiana Pacers":{"mean":232.5,"std":10.1},
-            "Los Angeles Clippers":{"mean":221.1,"std":9.0},
-            "Los Angeles Lakers":{"mean":225.6,"std":9.6},
-            "Memphis Grizzlies":{"mean":238.6,"std":8.7},
-            "Miami Heat":{"mean":220.6,"std":8.5},
-            "Milwaukee Bucks":{"mean":228.5,"std":9.9},
-            "Minnesota Timberwolves":{"mean":223.6,"std":8.7},
-            "New Orleans Pelicans":{"mean":229.1,"std":9.2},
-            "New York Knicks":{"mean":227.5,"std":8.8},
-            "Oklahoma City Thunder":{"mean":228.1,"std":9.5},
-            "Orlando Magic":{"mean":210.9,"std":8.6},
-            "Philadelphia 76ers":{"mean":225.4,"std":9.1},
-            "Phoenix Suns":{"mean":230.2,"std":9.0},
-            "Portland Trail Blazers":{"mean":224.8,"std":9.3},
-            "Sacramento Kings":{"mean":231.0,"std":9.8},
-            "San Antonio Spurs":{"mean":230.6,"std":9.9},
-            "Toronto Raptors":{"mean":226.1,"std":8.8},
-            "Utah Jazz":{"mean":233.1,"std":9.4},
-            "Washington Wizards":{"mean":228.4,"std":9.7}
-        
-            },
-            "EuroLeague": {
-                "Real Madrid":{"mean":163.8,"std":6.5},
-                "Barcelona":{"mean":160.7,"std":6.7},
-                "Olympiacos":{"mean":158.2,"std":6.3},
-                "Panathinaikos":{"mean":157.9,"std":6.2},
-                "Fenerbahce":{"mean":159.1,"std":6.5},
-                "Anadolu Efes":{"mean":161.3,"std":6.6},
-                "Monaco":{"mean":162.4,"std":6.5},
-                "Virtus Bologna":{"mean":158.7,"std":6.4},
-                "Bayern Munich":{"mean":155.4,"std":6.3},
-                "Partizan":{"mean":161.8,"std":6.6},
-                "Maccabi Tel Aviv":{"mean":163.5,"std":6.7},
-                "Zalgiris Kaunas":{"mean":156.8,"std":6.3},
-                "Valencia":{"mean":157.4,"std":6.4},
-                "Baskonia":{"mean":160.9,"std":6.6},
-                "ALBA Berlin":{"mean":154.8,"std":6.2},
-                "ASVEL Lyon":{"mean":155.2,"std":6.3},
-                "Estrella Roja": {"mean": 157.1, "std": 6.3},
-                "Olimpia Milano": {"mean": 156.6, "std": 6.2},
-                "Paris Basketball": {"mean": 159.3, "std": 6.4},
-                "Hapoel Tel Aviv": {"mean": 158.5, "std": 6.3},
-                "Dubai": {"mean": 160.1, "std":  6.5}
-            }
-        };
+    "NBA": {
+        "Atlanta Hawks": {"mean":237.5,"std":9.8},
+        "Boston Celtics":{"mean":223.5,"std":8.7},
+        "Brooklyn Nets":{"mean":217.3,"std":9.2},
+        "Charlotte Hornets":{"mean":219.3,"std":9.5},
+        "Chicago Bulls":{"mean":237.2,"std":8.8},
+        "Cleveland Cavaliers":{"mean":234.3,"std":8.9},
+        "Dallas Mavericks":{"mean":229.6,"std":9.7},
+        "Denver Nuggets":{"mean":237.7,"std":9.3},
+        "Detroit Pistons":{"mean":229.1,"std":9.1},
+        "Golden State Warriors":{"mean":224.3,"std":10.4},
+        "Houston Rockets":{"mean":224.1,"std":8.8},
+        "Indiana Pacers":{"mean":232.5,"std":10.1},
+        "Los Angeles Clippers":{"mean":221.1,"std":9.0},
+        "Los Angeles Lakers":{"mean":225.6,"std":9.6},
+        "Memphis Grizzlies":{"mean":238.6,"std":8.7},
+        "Miami Heat":{"mean":220.6,"std":8.5},
+        "Milwaukee Bucks":{"mean":228.5,"std":9.9},
+        "Minnesota Timberwolves":{"mean":223.6,"std":8.7},
+        "New Orleans Pelicans":{"mean":229.1,"std":9.2},
+        "New York Knicks":{"mean":227.5,"std":8.8},
+        "Oklahoma City Thunder":{"mean":228.1,"std":9.5},
+        "Orlando Magic":{"mean":210.9,"std":8.6},
+        "Philadelphia 76ers":{"mean":225.4,"std":9.1},
+        "Phoenix Suns":{"mean":230.2,"std":9.0},
+        "Portland Trail Blazers":{"mean":224.8,"std":9.3},
+        "Sacramento Kings":{"mean":231.0,"std":9.8},
+        "San Antonio Spurs":{"mean":230.6,"std":9.9},
+        "Toronto Raptors":{"mean":226.1,"std":8.8},
+        "Utah Jazz":{"mean":233.1,"std":9.4},
+        "Washington Wizards":{"mean":228.4,"std":9.7}
+    },
+    "EuroLeague": {
+        "Real Madrid":{"mean":163.8,"std":6.5},
+        "Barcelona":{"mean":160.7,"std":6.7},
+        "Olympiacos":{"mean":158.2,"std":6.3},
+        "Panathinaikos":{"mean":157.9,"std":6.2},
+        "Fenerbahce":{"mean":159.1,"std":6.5},
+        "Anadolu Efes":{"mean":161.3,"std":6.6},
+        "Monaco":{"mean":162.4,"std":6.5},
+        "Virtus Bologna":{"mean":158.7,"std":6.4},
+        "Bayern Munich":{"mean":155.4,"std":6.3},
+        "Partizan":{"mean":161.8,"std":6.6},
+        "Maccabi Tel Aviv":{"mean":163.5,"std":6.7},
+        "Zalgiris Kaunas":{"mean":156.8,"std":6.3},
+        "Valencia":{"mean":157.4,"std":6.4},
+        "Baskonia":{"mean":160.9,"std":6.6},
+        "ALBA Berlin":{"mean":154.8,"std":6.2},
+        "ASVEL Lyon":{"mean":155.2,"std":6.3},
+        "Estrella Roja": {"mean": 157.1, "std": 6.3},
+        "Olimpia Milano": {"mean": 156.6, "std": 6.2},
+        "Paris Basketball": {"mean": 159.3, "std": 6.4},
+        "Hapoel Tel Aviv": {"mean": 158.5, "std": 6.3},
+        "Dubai": {"mean": 160.1, "std":  6.5}
+    }
+};
 
         // -------------------- Utilidades --------------------
         function erf(x){
@@ -801,6 +800,7 @@
     </script>
 </body>
 </html>
+
 
 
 
